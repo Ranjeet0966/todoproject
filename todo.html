@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Your Todo List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="app-container">
+        
+        <div class="content-div">
+            <div class="todo-create-div">
+          <label for="todo">Todo :</label>
+                <input id="create-todo-input" type="text" placeholder="your task" onkeyup="controller.createTodoEntered()">
+                <label for="description">Description :</label>
+                <input id="des" type="text" placeholder="description of task" onkeyup="controller.createTodoEntered()">
+                <button id="create-todo-btn" class="hide" onclick="controller.createTodo()">Add</button>
+                <div id="alert-box"></div>
+            </div>
+            <div class="todos-view-box">
+                <br>
+                <ul></ul>
+            </div>
+        </div>
+        <div class="spacer"></div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+
+</html>
