@@ -1,34 +1,36 @@
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Your Todo List</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="css/main.css">
-
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <title>Awesome To-Do List HTML, CSS & JavaScript</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
 </head>
-
 <body>
-    <div class="app-container">
-        
-        <div class="content-div">
-            <div class="todo-create-div">
-          <label for="todo">Todo :</label>
-                <input id="create-todo-input" type="text" placeholder="your task" onkeyup="controller.createTodoEntered()">
-                <label for="description">Description :</label>
-                <input id="des" type="text" placeholder="description of task" onkeyup="controller.createTodoEntered()">
-                <button id="create-todo-btn" class="hide" onclick="controller.createTodo()">Add</button>
-                <div id="alert-box"></div>
-            </div>
-            <div class="todos-view-box">
-                <br>
-                <ul></ul>
-            </div>
-        </div>
-        <div class="spacer"></div>
-    </div>
-    <script src="todo.js"></script>
-</body>
+	<div class="container">
+		<div class="addTask">
+            <label for="task">Todo Name:</label>
+			<input type="text" id="task" placeholder="Add a Task">
+            <label for="description">Description:</label>
+            <input type="text" id="description" placeholder="Description">
+			<button>Add</button>
+		</div>
 
+		<div class="taskLists">
+			<div class="notCompleted">
+				<h3>Not Completed</h3>
+				<ol class="notCompletedList"></ol>
+			</div>
+
+			<div class="completed">
+				<h3>Todos Done</h3>
+				<ol class="completedList"></ol>
+			</div>
+		</div>
+	</div>
+
+</section> <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>  
+<script src="todo11.js"></script>
+</body>
 </html>
